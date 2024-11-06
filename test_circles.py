@@ -12,6 +12,7 @@ class TestCircleArea(unittest.TestCase):
     def test_values(self):
         # Make sure value errors are raised when necessary
         self.assertRaises(ValueError, circle_area, -2)
+        self.assertRaises(ValueError, circle_area, -555)
 
     def test_types(self):
         # Make sure type errors are raised when necessary
